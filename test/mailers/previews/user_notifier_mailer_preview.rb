@@ -2,7 +2,6 @@
 class UserNotifierMailerPreview < ActionMailer::Preview
 
   def sample_mail_preview
-	UserNotifierMailer.send_signup_email(User.first)
+    UserNotifierMailer.send_signup_email(User.first)
   end
-
 end
