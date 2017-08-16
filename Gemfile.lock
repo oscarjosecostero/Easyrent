@@ -150,6 +150,9 @@ GEM
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> RSpec Rails Installed. Home Controller and UserNotificationMailer Specs
     rspec-core (3.6.0)
       rspec-support (~> 3.6.0)
     rspec-expectations (3.6.0)
@@ -167,8 +170,11 @@ GEM
       rspec-mocks (~> 3.6.0)
       rspec-support (~> 3.6.0)
     rspec-support (3.6.0)
+<<<<<<< HEAD
 =======
 >>>>>>> Install Rubocop
+=======
+>>>>>>> RSpec Rails Installed. Home Controller and UserNotificationMailer Specs
     rubocop (0.49.1)
       parallel (~> 1.10)
       parser (>= 2.3.3.1, < 3.0)
@@ -244,9 +250,13 @@ DEPENDENCIES
   puma (~> 3.7)
   rails (~> 5.1.3)
 <<<<<<< HEAD
+<<<<<<< HEAD
   rspec-rails (~> 3.6)
 =======
 >>>>>>> Install Rubocop
+=======
+  rspec-rails (~> 3.6)
+>>>>>>> RSpec Rails Installed. Home Controller and UserNotificationMailer Specs
   rubocop
   sass-rails (~> 5.0)
   selenium-webdriver
