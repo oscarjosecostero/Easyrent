@@ -21,11 +21,28 @@ body {
   color: #5a5a5a;
 }
 
+.marketing .btn {
+  border-radius: 0;
+
+}
+.container-fluid{
+  height: 100%
+}
+.container-fluid .row{
+  height: 100%
+}
+.center{
+  height: 50%;
+  width: 50%;
+}
+
 .heading {
   height: 100vh;
   background-image: url("background.jpg");
-  background-size: cover; 
+  background-size: Cover;
+  text-align: Center;
 }
+
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
