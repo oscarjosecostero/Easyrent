@@ -2,6 +2,8 @@ default: &default
   adapter: postgresql
   encoding: unicode
   prepared_statements: false
+  pool: 5
+  
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("DB_POOL") { 16 } %>
@@ -67,8 +69,4 @@ test:
 #
 production:
   <<: *default
-  database: <%= ENV['RDS_DB_NAME'] %>
-  username: <%= ENV['RDS_USERNAME'] %>
-  password: <%= ENV['RDS_PASSWORD'] %>
-  host: <%= ENV['RDS_HOSTNAME'] %>
-  port: <%= ENV['RDS_PORT'] %>
+  url: <%= ENV['POSTGRESQL_URL'] %> #This is the environment variable created by our Dokku command earlier
