@@ -120,14 +120,8 @@ GEM
     parallel (1.12.0)
     parser (2.4.0.0)
       ast (~> 2.2)
-<<<<<<< HEAD
-<<<<<<< HEAD
     pg (0.21.0)
-=======
->>>>>>> Install Rubocop
-=======
     popper_js (1.11.1)
->>>>>>> Bootstrap, slim and bourbon installed
     powerpack (0.1.1)
     public_suffix (2.0.5)
     puma (3.9.1)
@@ -166,10 +160,6 @@ GEM
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> RSpec Rails Installed. Home Controller and UserNotificationMailer Specs
     rspec-core (3.6.0)
       rspec-support (~> 3.6.0)
     rspec-expectations (3.6.0)
@@ -187,11 +177,6 @@ GEM
       rspec-mocks (~> 3.6.0)
       rspec-support (~> 3.6.0)
     rspec-support (3.6.0)
-<<<<<<< HEAD
-=======
->>>>>>> Install Rubocop
-=======
->>>>>>> RSpec Rails Installed. Home Controller and UserNotificationMailer Specs
     rubocop (0.49.1)
       parallel (~> 1.10)
       parser (>= 2.3.3.1, < 3.0)
@@ -231,11 +216,8 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-<<<<<<< HEAD
-=======
     sqlite3 (1.3.13)
     temple (0.8.0)
->>>>>>> Bootstrap, slim and bourbon installed
     thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.8)
@@ -277,14 +259,7 @@ DEPENDENCIES
   pg
   puma (~> 3.7)
   rails (~> 5.1.3)
-<<<<<<< HEAD
-<<<<<<< HEAD
   rspec-rails (~> 3.6)
-=======
->>>>>>> Install Rubocop
-=======
-  rspec-rails (~> 3.6)
->>>>>>> RSpec Rails Installed. Home Controller and UserNotificationMailer Specs
   rubocop
   sass-rails (~> 5.0)
   selenium-webdriver
