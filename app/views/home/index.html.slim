@@ -22,46 +22,96 @@
         .header-bg
           h1.display-3.header-title Easyrent
           p.lead Just for you
-          form.form
-            .row.justify-content-center
-              input.header-input placeholder="Country,    State,     City, .."
-              select
+          form.form-inline.align-content-center.row.justify-content-center
+            .form-group
+              input.form-control.form-control-lg placeholder="Country,    State,     City, .."
+              select.form-control.form-control-lg
                 option selected="" All Properties
                 option value="1"  Apartment
                 option value="2"  House
                 option value="3"  Office
-              button.btn.btn-primary.header-btn type="submit" Search
+            button.btn.btn-primary.btn-lg type="submit"  Search
   .about
     .container.about-container
       .row
         .col
-            .row.justify-content-center
-              .col-lg-8.text-center.padding-top
-                h1 Why Easyrent
-                p We are your best choice in real estate
-            .row
-              .col-lg-6.text-center
-                i.fa.fa-building-o.fa-3x 
-                h4 Buy or Rent
-                p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              .col-lg-6.text-center
-                i.fa.fa-diamond.fa-3x 
-                h4 The best Agencies
-                p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            .row
-              .col-lg-6.text-center
-                i.fa.fa-user.fa-3x 
-                h4 Top agents
-                p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              .col-lg-6.text-center
-                i.fa.fa-pencil-square-o.fa-3x 
-                h4 Real Estate Advices
-                p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          .row.justify-content-center
+            .col-lg-8.text-center.padding-top
+              h1 Why Easyrent
+              p We are your best choice in real estate
+          .row
+            .col-lg-6.text-center
+              i.fa.fa-building-o.fa-3x 
+              h4 Buy or Rent
+              p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            .col-lg-6.text-center
+              i.fa.fa-diamond.fa-3x 
+              h4 The best Agencies
+              p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          .row
+            .col-lg-6.text-center
+              i.fa.fa-user.fa-3x 
+              h4 Top agents
+              p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            .col-lg-6.text-center
+              i.fa.fa-pencil-square-o.fa-3x 
+              h4 Real Estate Advices
+              p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         .col-lg-4.girl-background
-  .properties
-    .apartments
-    .houses
-  .agents
+  .featured-properties
+    .container-fluid
+      .row.padding-top
+        h1 Featured Properties
+      .row.featured-properties-row
+        .container
+          = render("/home/card-deck")
+          = render("/home/modals")
+  .testimonial
+          = render("/home/carousel-testimonials")
   .agencies
+    .container
+      .row.no-gutter
+        .col-lg-4.col-sm-6.no-gutter
+          .img-container
+            img.img-fluid alt="" src="/assets/agency1.jpg" /
+            .image-caption.text-center
+              i.fa.fa-3x.fa-search 
+              h3 View Agency
+        .col-lg-4.col-sm-6.no-gutter
+          .img-container
+            img.img-fluid alt="" src="/assets/agency2.jpg" /
+            .image-caption.text-center
+              i.fa.fa-3x.fa-search 
+              h3 View Agency
+        .col-lg-4.col-sm-6.no-gutter
+          .img-container
+            img.img-fluid alt="" src="/assets/agency3.jpg" /
+            .image-caption.text-center
+              i.fa.fa-3x.fa-search 
+              h3 View Agency
+        .col-lg-4.col-sm-6.no-gutter
+          .img-container
+            img.img-fluid alt="" src="/assets/agency4.jpg" /
+            .image-caption.text-center
+              i.fa.fa-3x.fa-search 
+              h3 View Agency
+        .col-lg-4.col-sm-6.no-gutter
+          .img-container
+            img.img-fluid alt="" src="/assets/agency5.jpg" /
+            .image-caption.text-center
+              i.fa.fa-3x.fa-search 
+              h3 View Agency
+        .col-lg-4.col-sm-6.no-gutter
+          .img-container
+            img.img-fluid alt="" src="/assets/agency2.jpg" /
+            .image-caption.text-center
+              i.fa.fa-3x.fa-search 
+              h3 View Agency
+    .row.text-center style="background-color:black; color: white; padding:3rem 0;"
+      .col
+        h2.text-center TOP AGENCIES
+        h4.text-center Our clients trust in them, so should you
+  .agents
   .contact
 
+/! Modals
