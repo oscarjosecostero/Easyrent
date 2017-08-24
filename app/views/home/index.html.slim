@@ -2,52 +2,102 @@
   .container-fluid
     .row.justify-content-center.align-items-center
       .col.align-items-center
-        h1.display-3.text-white Mas fácil que pela' mandarina
-
-  hr.featurette-divider/
-  .row
-    .col-3
-      .card 
-        img.card-img-top alt=("Card image cap") src="/assets/apartment2" /
-        .img-text.h3.text-white 1.000.000
-        .card-body
-          h4.card-title Some adress
-          .row
-            .col-6    
-              p Beds: 
-            .col-6    
-              p Baths:
-            .col-6    
-              p m2
-          p.card-text
-            small.text-muted Listed by RENT A HOUSE
-    .col-3
-      .card 
-        img.card-img-top alt=("Card image cap") src="/assets/profile.jpg" /
-        .img-text.h3.text-white 35 Properties
-        .card-body
-          h4.card-title Contact
-          .row
-            .col-6    
-              p Adress: 
-            .col-6    
-              p Baths:
-            .col-6    
-              p 
-          p.card-text
-            small.text-muted Listed by RENT A HOUSE
-  hr.featurette-divider/
-
-  /! /END THE FEATURETTES
-  /! FOOTER
-  footer
-    p.float-right
-      a href="#"  Back to top
-    p
-      | \&copy; 2017 Company, Inc. &middot;
-      a href="#"  Privacy
-      | \&middot;
-      a href="#"  Terms
+        h1.display-3.text-white Some awesome slogan here
+.container
+  .properties-section
+    .display-4.text-center Properties
+    hr
+      .text-center Filters
+      .row
+        form.form-inline.mt-2.mt-md-0
+          input.form-control.mr-sm-2 aria-label="Search" placeholder="City/State/Country" type="text" /
+          input.form-control.mr-sm-2 aria-label="Search" placeholder="Price" type="text" /
+          input.form-control.mr-sm-2 aria-label="Search" placeholder="Apartment/House/Land" type="text" /
+          input.form-control.mr-sm-2 aria-label="Search" placeholder="Rent/Buy" type="text" /
+          input.form-control.mr-sm-2 aria-label="Search" placeholder="Bedrooms" type="text" /
+      hr
+      .row
+        .col-3
+          .card onclick="$('#properties-modal').modal('show')"
+            img.card-img-top alt=("Card image cap") src="/assets/apartment2" /
+            .img-text.h3.text-white 1.000.000
+            .card-body
+              h4.card-title Some adress
+              .row
+                .col-6 Beds: 
+                .col-6 Baths:
+                .col-6 m2
+              p.card-text
+                small.text-muted Listed by Jane Doe
+        .col-3 
+          button.btn.btn-outline-info. type="submit"  Sell property
+      .modal id="properties-modal" data-keyboard="true"
+        .modal-dialog role="document" 
+          .modal-content
+            .modal-header
+              h5.modal-title Modal title
+              button.close aria-label="Close" data-dismiss="modal" type="button" 
+                span aria-hidden="true"  &times;
+            .modal-body
+              img.card-img-top alt=("Card image cap") src="/assets/apartment2" /
+              hr
+              p Detailed information here
+              hr
+              p Contact information here
+            .modal-footer
+              button.btn.btn-primary type="button"  Contact Agent
+              button.btn.btn-secondary data-dismiss="modal" type="button"  Close
+  hr
+  .agents-section
+    .display-4.text-center Agents
+    .row  
+      .col-3
+        .card 
+          img.card-img-top alt=("Card image cap") src="/assets/profile.jpg" /
+          .img-text.h3.text-white 35 Properties
+          .card-body
+            h4.card-title Contact
+            .row
+              .col-6    
+                p Adress: 
+              .col-6    
+                p Properties Sold:
+            p.card-text
+              small.text-muted Works with Lightspark
+      .col-3 
+        button.btn.btn-outline-info. type="submit"  Become an Agent
+    hr
+    .companies-section
+      .display-4.text-center Companies
+      .row  
+        .col-3
+          .card 
+            img.card-img-top alt=("Card image cap") src="/assets/company.png" /
+            .img-text.h3 35 Agents
+            .card-body
+              h4.card-title Contact
+              .row
+                .col-6    
+                  p Adress: 
+                .col-6    
+                  p Total sold (USD):
+                .col-6    
+                  p Offices
+              p.card-text
+                small.text-muted 
+        .col-3 
+          button.btn.btn-outline-info. type="submit"  Add my Company
+  hr
+/! /END THE FEATURETTES
+/! FOOTER
+footer
+  p.float-right
+    a href="#"  Back to top
+  p
+    | \&copy; 2017 Company, Inc. &middot;
+    a href="#"  Privacy
+    | \&middot;
+    a href="#"  Terms
 /! /.container
 /!
   | Bootstrap core JavaScript
