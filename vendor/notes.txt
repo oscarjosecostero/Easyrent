@@ -1,5 +1,0 @@
-para descargar:
-
-Bootstrap 4
-Bourbon
-eslint
