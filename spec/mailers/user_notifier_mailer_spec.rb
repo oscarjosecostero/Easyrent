@@ -3,7 +3,7 @@ require 'rails_helper'
 
 RSpec.describe 'UserNotifierMailer', type: :mailer do
   describe 'notifier' do
-    let(:user) {create(:user)}
+    let(:user) { create(:user) }
     let(:mail) { UserNotifierMailer.send_signup_email(user) }
 
     it 'renders the headers' do

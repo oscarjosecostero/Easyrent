@@ -8,7 +8,6 @@ RSpec.describe HomeController, type: :controller do
       get :index
       expect(response).to be_success
     end
-    
     it 'redirects to Sign in Path if not logged in' do
       get :index
       expect(response).to redirect_to(new_user_session_path)
