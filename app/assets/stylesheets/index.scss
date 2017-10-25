@@ -25,6 +25,7 @@ body {
 .navbar{
   font-family: 'Lato' !important;
   font-size: 0.9rem;
+  color: white !important;
   background-color: transparent;
 }
 .navbar-wrapper{
@@ -57,6 +58,7 @@ border-left:0;
 }
 
 .nav , a {
+  color: white !important;
   font-weight: bold;
   transition: 0.2s ease;
   border-bottom: 4px solid transparent;
