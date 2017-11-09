@@ -1,24 +1,24 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-//orange: #
-
 body {
   margin:0;
   font-family: 'Lato';
   font-size: 20px;
   background-color: #fff;
-  line-height: 1.4
+  line-height: 1.4;
 }
 .header{
   height: 45rem;
   width: 100%;
   display:table;
   background-color:#eeeeee;
-  background-image: url("header-background.jpg");
+  background-image: url(header-background);
   background-size: cover;
   background-attachment: fixed;
+}
+.header select {
+  height: 46px !important;
+}
+.header .dropdown-menu, .dropdown-menu a:hover{
+  background-color:transparent;
 }
 .navbar{
   font-family: 'Lato' !important;
@@ -35,6 +35,21 @@ body {
   text-align: center;
 }
 
+.header-info .form-group * {
+  border:0px;
+}
+.header-info input {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.header-info select {
+border-radius:0px;
+}
+.header-info button {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
 .header-title{
     font-family: 'IndieFlower', cursive;
 }
@@ -49,32 +64,22 @@ body {
   src:font-url('/assets/Lato-Regular.ttf');
 }
 
-.nav , a {
+.navbar a {
   color: white !important;
   font-weight: bold;
   transition: 0.2s ease;
   border-bottom: 4px solid transparent;
 }
-.nav , a:hover {
+.navbar a:hover {
   border-bottom: 4px solid #FF851B;
   transition: 0.2s ease;
 }
 
 .about{
+  background-color:#fff;
   font-size: 15px !important;
 }
-.about-us-text{
-  display: table-row;
-  float:top;
-}
 
-.about-image-col{
-  min-height: 30rem;
-
-}
-.no-padding{
-  padding:0px;
-}
 .about .fa{
   color: #ff5722;
     transition: all 1s;
@@ -114,6 +119,10 @@ body {
   color:#ff5722;
   overflow: hidden;
 }
+.featured-properties{
+
+  background-color:#fff;
+}
 .featured-properties-row {
     background-image: url(orange-background);
     background-size: cover;
@@ -149,20 +158,19 @@ body {
 
 // Styling for agencies section
 
-.agencies img {
+#agencies img {
   width: -webkit-fill-available;
   height: 300px;
   opacity: 1;
   transition: 0.5s ease;
 }
-.agencies .col-lg-4{
+#agencies .col-lg-4{
   padding:0
 
 }
 .image-caption{
   vertical-align: middle;
   position:absolute;
-  width: 0;
   height: 100%;
   top:0;
   left: 0;
@@ -179,9 +187,10 @@ body {
 
 .img-container:hover .image-caption {
   opacity: 1;
-  width: 100%;
+  transform:width 100%;
   transition: 0.5s ease;
   background-color:rgba(255, 89, 56, 0.8);
+    cursor:pointer;
 }
 .img-container i {
   color: white;
@@ -197,4 +206,73 @@ body {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#agencies-title{
+  background-color:black; 
+  color: white; 
+  padding:3rem 0;
+  }
+
+#agencies{
+  background-color:black; 
+}
+
+
+// Agents custom design
+
+.agents{
+  background-color:#eeeeee;
+  padding-bottom:3rem;
+}
+
+.agents-title{
+  padding:3rem 0;
+}
+.agents img{
+  padding-bottom:1rem;
+}
+.agents i{
+  padding: 0 0.5rem;
+  cursor:pointer;
+}
+
+
+.agents .col-lg-4{
+  padding:2rem 0 !important;
+
+}
+.agents .col-lg-4:hover{
+  transition: all 1.5s ease;
+  transform: rotateY(360deg);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  i, h3{
+    color: #ff5722;
+    transition: all 2s ease;
+  }
+
+}
+.agents-title{
+font-family:"roboto" !important;
+}
+.contact{
+  padding:3rem 0;
+  background-color:#fff;
+  font-size: 0.9rem !important;
+}
+.map-container{
+  width: 100%;
+  height: -webkit-fill-available;
+}
+iframe{
+  height: -webkit-fill-available;
+  width: 100%;
+}
+
+
+//footer
+.footer {
+  background-color: #ff5722;
+  padding-top: 16px;
+  color: white;
 }
