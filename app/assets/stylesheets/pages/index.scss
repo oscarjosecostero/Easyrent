@@ -1,0 +1,278 @@
+body {
+  margin:0;
+  font-family: 'Lato';
+  font-size: 20px;
+  background-color: #fff;
+  line-height: 1.4;
+}
+.header{
+  height: 45rem;
+  width: 100%;
+  display:table;
+  background-color:#eeeeee;
+  background-image: url(header-background);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.header select {
+  height: 46px !important;
+}
+.header .dropdown-menu, .dropdown-menu a:hover{
+  background-color:transparent;
+}
+.navbar{
+  font-family: 'Lato' !important;
+  font-size: 0.9rem;
+  color: white !important;
+  background-color: transparent;
+}
+.navbar-wrapper{
+  padding:1.5rem 
+}
+.header-info{
+  background-color:transparent;
+  display: table-row;
+  text-align: center;
+}
+
+.header-info .form-group * {
+  border:0px;
+}
+.header-info input {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.header-info select {
+border-radius:0px;
+}
+.header-info button {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.header-title{
+    font-family: 'IndieFlower', cursive;
+}
+
+@font-face {
+  font-family: 'IndieFlower';
+  src:font-url('/assets/IndieFlower.ttf');
+}
+
+@font-face {
+  font-family: 'Lato';
+  src:font-url('/assets/Lato-Regular.ttf');
+}
+
+.navbar a {
+  color: white !important;
+  font-weight: bold;
+  transition: 0.2s ease;
+  border-bottom: 4px solid transparent;
+}
+.navbar a:hover {
+  border-bottom: 4px solid #FF851B;
+  transition: 0.2s ease;
+}
+
+.about{
+  background-color:#fff;
+  font-size: 15px !important;
+}
+
+.about .fa{
+  color: #ff5722;
+    transition: all 1s;
+}
+
+.about .fa:hover{
+  color: #003b5e;
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+
+.about-us , .col-lg-6{
+    padding: 0 4em;
+}
+.girl-background {
+  background-image:url(girl-background);
+  background-size: 150% 100%;
+  background-position: right;
+}
+.about-container{
+  background-color: #f4f4f4;
+}
+.padding-top{
+  padding-top:3rem;
+}
+.card  img:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  //opacity: 0.6;
+}
+
+.small.text-muted{
+  font-size: 0.8rem;
+}
+.card{
+  color:#ff5722;
+  overflow: hidden;
+}
+.featured-properties{
+
+  background-color:#fff;
+}
+.featured-properties-row {
+    background-image: url(orange-background);
+    background-size: cover;
+
+    padding-bottom:3rem;
+}
+.card  img{
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.card-footer {
+  //background-color:#393E46;
+}
+.card-footer > small{
+  font-size: 0.65rem;
+}
+.modal  img {
+  height: 20rem;
+}
+#modal1 h1 {
+  margin-left: 1rem;
+}
+.testimonial{
+  //height: 30rem;
+  background-color:#ff5722;
+  color: white !important; 
+}
+.carousel{
+  padding: 2rem 0rem;  
+}
+
+// Styling for agencies section
+
+#agencies img {
+  width: -webkit-fill-available;
+  height: 300px;
+  opacity: 1;
+  transition: 0.5s ease;
+}
+#agencies .col-lg-4{
+  padding:0
+
+}
+.image-caption{
+  vertical-align: middle;
+  position:absolute;
+  height: 100%;
+  top:0;
+  left: 0;
+  transition: 0.5s ease;
+  width: -webkit-fill-available;
+  opacity: 0;
+}
+.img-container{
+  position:relative;
+}
+.img-container:hover img {
+   opacity: 0.8;
+}
+
+.img-container:hover .image-caption {
+  opacity: 1;
+  transform:width 100%;
+  transition: 0.5s ease;
+  background-color:rgba(255, 89, 56, 0.8);
+    cursor:pointer;
+}
+.img-container i {
+  color: white;
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-container h3 {
+    color: white;
+    position:absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#agencies-title{
+  background-color:black; 
+  color: white; 
+  padding:3rem 0;
+  }
+
+#agencies{
+  background-color:black; 
+}
+
+
+// Agents custom design
+
+.agents{
+  background-color:#eeeeee;
+  padding-bottom:3rem;
+}
+
+.agents-title{
+  padding:3rem 0;
+}
+.agents img{
+  padding-bottom:1rem;
+}
+.agents i{
+  padding: 0 0.5rem;
+  cursor:pointer;
+}
+
+
+.agents .col-lg-4{
+  padding:2rem 0 !important;
+
+}
+.agents .col-lg-4:hover{
+  transition: all 1.5s ease;
+  transform: rotateY(360deg);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  i, h3{
+    color: #ff5722;
+    transition: all 2s ease;
+  }
+
+}
+.agents-title{
+font-family:"roboto" !important;
+}
+.contact{
+  padding:3rem 0;
+  background-color:#fff;
+  font-size: 0.9rem !important;
+}
+.map-container{
+  width: 100%;
+  height: -webkit-fill-available;
+}
+iframe{
+  height: -webkit-fill-available;
+  width: 100%;
+}
+
+
+//footer
+.footer {
+  background-color: #ff5722;
+  padding-top: 16px;
+  color: white;
+}
